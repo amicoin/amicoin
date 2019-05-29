@@ -218,6 +218,9 @@ int printStats(bool mining)
 
     if (IsInitialBlockDownload()) {
         int netheight = EstimateNetHeight(height, tipmediantime, Params());
+        // Fix just in case network is missing...
+        if (netheight <= 0) netheight = 1;
+
         int downloadPercent = height * 100 / netheight;
         std::cout << "     " << _("Downloading blocks") << " | " << height << " / ~" << netheight << " (" << downloadPercent << "%)" << std::endl;
     } else {
