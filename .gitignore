@@ -12,7 +12,6 @@ src/test/test_bitcoin
 *zcashTest.vk
 
 # autoreconf
-Makefile.in
 aclocal.m4
 autom4te.cache/
 build-aux/config.guess
@@ -69,8 +68,6 @@ src/univalue/gen
 *.lo
 *.la
 
-# Compilation
-Makefile
 
 # Unit-tests
 Makefile.test
