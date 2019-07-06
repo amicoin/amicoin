@@ -2,10 +2,10 @@
 *.deb
 *.exe
 src/bitcoin
-src/zcashd
-src/zcash-cli
-src/zcash-gtest
-src/zcash-tx
+src/amicoind
+src/amicoin-cli
+src/amicoin-gtest
+src/amicoin-tx
 src/test/test_bitcoin
 
 *zcashTest.pk
